@@ -61,6 +61,8 @@ body {
     margin-top: 10rem;
 
     background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
@@ -184,7 +186,6 @@ body {
     color: var(--dark-blue);
 }
 
-
 .attribution {
     font-size: 1.4rem;
     color: var(--desaturated-blue);
@@ -193,4 +194,11 @@ body {
 .attribution a {
     text-decoration: none;
     color: var(--bright-blue);
+}
+
+@media screen (max 375px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
 }
