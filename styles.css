@@ -1,0 +1,173 @@
+
+
+/*
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+*/
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --bradius: 2rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-size: 1.6rem;
+}
+
+button {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+body {
+    margin-top: 10rem;
+
+    background-color: var(--pale-blue);
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    max-width: 400px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: var(--bradius);
+
+    box-shadow: 1rem 1rem 2.5rem 0 var(--desaturated-blue);
+    margin-bottom: 2rem;
+}
+
+.card__banner-container {
+    width: 100%;
+}
+
+.card__banner {
+    width: 100%;
+}
+
+.card__content {
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card__order-summary {
+    margin-bottom: 2.2rem;
+}
+
+.card__description {
+    margin-bottom: 2.2rem;
+}
+
+.card__plan {
+    width: 100%;
+    background-color: var(--very-pale-blue);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1rem;
+    margin-bottom: 2.2rem;
+}
+
+.card__plan-left {
+    display: flex;
+}
+
+.card__plan-name {
+    color: black;
+}
+
+.card__icon {
+    margin-right: 2.2rem;
+}
+
+.card__plan-name-and-price {
+}
+
+.card__plan-name {
+    font-weight: 700;
+}
+
+.card__plan-right {
+    color: var(--bright-blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card__payment-button {
+    width: 100%;
+    padding: 1.2rem; 
+    background-color: var(--bright-blue);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0rem 1rem 2rem 0 var(--pale-blue);
+    margin-bottom: 2.2rem;
+}
+
+.card__cancel-button {
+    width: 100%;
+    padding: 1.2rem; 
+    background-color: white;
+    color: var(--desaturated-blue);
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: -1rem;
+}
+
+.attribution {
+    font-size: 1.4rem;
+    color: var(--desaturated-blue);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--bright-blue);
+}
