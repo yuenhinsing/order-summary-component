@@ -39,25 +39,28 @@ html {
 
 h1 {
     font-weight: 900;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 p {
     color: var(--desaturated-blue);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 button {
     font-family: "Red Hat Display", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 body {
     margin-top: 10rem;
 
     background-color: var(--pale-blue);
-    font-size: 1.6rem;
 
     display: flex;
     flex-direction: column;
@@ -65,7 +68,7 @@ body {
 }
 
 .card {
-    max-width: 400px;
+    max-width: 350px;
     background-color: white;
 
     display: flex;
@@ -76,7 +79,7 @@ body {
     border-radius: var(--bradius);
 
     box-shadow: 1rem 1rem 2.5rem 0 var(--desaturated-blue);
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 .card__banner-container {
@@ -97,11 +100,11 @@ body {
 }
 
 .card__order-summary {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
 }
 
 .card__description {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
 }
 
 .card__plan {
@@ -113,22 +116,25 @@ body {
     align-items: center;
 
     border-radius: 1rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
 }
 
 .card__plan-left {
     display: flex;
 }
 
-.card__plan-name {
-    color: black;
-}
-
 .card__icon {
-    margin-right: 2.2rem;
+    margin-right: 1.8rem;
 }
 
 .card__plan-name-and-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__plan-name {
+    color: black;
 }
 
 .card__plan-name {
@@ -137,8 +143,14 @@ body {
 
 .card__plan-right {
     color: var(--bright-blue);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card__plan-right:hover {
+    text-decoration: none;
+    opacity: 0.8;
 }
 
 .card__payment-button {
@@ -149,7 +161,12 @@ body {
     border: none;
     border-radius: 1rem;
     box-shadow: 0rem 1rem 2rem 0 var(--pale-blue);
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card__payment-button:hover {
+    opacity: 0.8;
 }
 
 .card__cancel-button {
@@ -160,7 +177,13 @@ body {
     border: none;
     border-radius: 1rem;
     margin-bottom: -1rem;
+    transition: color 0.3s ease-in-out;
 }
+
+.card__cancel-button:hover {
+    color: var(--dark-blue);
+}
+
 
 .attribution {
     font-size: 1.4rem;
